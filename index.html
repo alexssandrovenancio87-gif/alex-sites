@@ -1,172 +1,79 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Sites | Criação de Sites</title>
-
-    <meta
-        name="description"
-        content="Alex Sites — criação de sites modernos, profissionais e responsivos para empresas e profissionais."
-    >
-
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
+<header>
+    <div class="logo">Alex<span>Sites</span></div>
 
-<!-- =========================================================
-     CABEÇALHO
-========================================================= -->
-
-<header class="header">
-
-    <div class="container nav">
-
-        <a href="#inicio" class="logo">
-            Alex<span>Sites</span>
-        </a>
-
-
-        <nav>
-
-            <a href="#inicio">
-                Início
-            </a>
-
-            <a href="#servicos">
-                Serviços
-            </a>
-
-            <a href="#portfolio">
-                Portfólio
-            </a>
-
-            <a href="#planos">
-                Planos
-            </a>
-
-            <a href="#contato">
-                Contato
-            </a>
-
-        </nav>
-
-    </div>
-
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#planos">Planos</a>
+        <a href="#contato">Contato</a>
+    </nav>
 </header>
-
-
-
-<!-- =========================================================
-     CONTEÚDO PRINCIPAL
-========================================================= -->
 
 <main>
 
+<section class="hero" id="inicio">
 
-<!-- =========================================================
-     HERO
-========================================================= -->
+    <div class="hero-text">
+        <p class="mini-title">CRIAÇÃO DE SITES</p>
 
-<section id="inicio" class="hero">
+        <h1>
+            Seu negócio merece
+            <span>um site profissional.</span>
+        </h1>
 
-    <div class="container hero-content">
+        <p>
+            Sites modernos, responsivos e pensados para apresentar
+            sua empresa, seus produtos e seus serviços na internet.
+        </p>
 
+        <div class="hero-buttons">
+            <a href="#portfolio" class="btn-primary">Ver portfólio</a>
+            <a href="#contato" class="btn-secondary">Pedir orçamento</a>
+        </div>
+    </div>
 
-        <div class="hero-text">
+    <!-- SLIDE DO PORTFÓLIO -->
+    <div class="portfolio-slider">
 
-            <span class="tag">
-                CRIAÇÃO DE SITES
-            </span>
-
-
-            <h1>
-
-                Seu negócio merece
-
-                <span>
-                    uma presença profissional na internet.
-                </span>
-
-            </h1>
-
-
-            <p>
-                Crio sites modernos, responsivos e personalizados
-                para empresas, profissionais e pequenos negócios.
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a
-                    href="#planos"
-                    class="btn primary"
-                >
-                    Ver planos
-                </a>
-
-
-                <a
-                    href="#portfolio"
-                    class="btn secondary"
-                >
-                    Ver portfólio
-                </a>
-
-            </div>
-
+        <div class="slider-card active">
+            <div class="project-icon">🍰</div>
+            <p>PROJETO 01</p>
+            <h3>Ka Doces</h3>
+            <span>Site para confeitaria</span>
         </div>
 
+        <div class="slider-card">
+            <div class="project-icon">💻</div>
+            <p>PROJETO 02</p>
+            <h3>Tech Notebook</h3>
+            <span>Manutenção de notebooks</span>
+        </div>
 
+        <div class="slider-card">
+            <div class="project-icon">🌐</div>
+            <p>PROJETO 03</p>
+            <h3>Alex Sites</h3>
+            <span>Criação de sites profissionais</span>
+        </div>
 
-        <div class="hero-card">
+        <button class="slider-btn prev" onclick="mudarSlide(-1)">‹</button>
+        <button class="slider-btn next" onclick="mudarSlide(1)">›</button>
 
-            <div class="browser-top">
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </div>
-
-
-            <div class="browser-content">
-
-                <div class="mini-logo">
-
-                    Alex<span>Sites</span>
-
-                </div>
-
-
-                <div class="mini-line large"></div>
-
-                <div class="mini-line"></div>
-
-                <div class="mini-line short"></div>
-
-
-                <div class="mini-button">
-
-                    Seu próximo site
-
-                </div>
-
-            </div>
-
+        <div class="slider-dots">
+            <span class="dot active" onclick="irParaSlide(0)"></span>
+            <span class="dot" onclick="irParaSlide(1)"></span>
+            <span class="dot" onclick="irParaSlide(2)"></span>
         </div>
 
     </div>
@@ -174,767 +81,141 @@
 </section>
 
 
+<section class="portfolio" id="portfolio">
 
-<!-- =========================================================
-     SERVIÇOS
-========================================================= -->
-
-<section
-    id="servicos"
-    class="section"
->
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <span>
-                O QUE EU FAÇO
-            </span>
-
-
-            <h2>
-                Sites pensados para o seu negócio
-            </h2>
-
-
-            <p>
-                Uma presença digital bonita, clara e adaptada
-                para celulares, tablets e computadores.
-            </p>
-
-        </div>
-
-
-
-        <div class="services">
-
-
-            <article class="service-card">
-
-                <div class="icon">
-                    🌐
-                </div>
-
-
-                <h3>
-                    Sites profissionais
-                </h3>
-
-
-                <p>
-                    Sites modernos para apresentar sua empresa,
-                    seus serviços e suas informações.
-                </p>
-
-            </article>
-
-
-
-            <article class="service-card">
-
-                <div class="icon">
-                    📱
-                </div>
-
-
-                <h3>
-                    Responsivos
-                </h3>
-
-
-                <p>
-                    Seu site funcionando corretamente em celulares,
-                    tablets e computadores.
-                </p>
-
-            </article>
-
-
-
-            <article class="service-card">
-
-                <div class="icon">
-                    ✨
-                </div>
-
-
-                <h3>
-                    Design personalizado
-                </h3>
-
-
-                <p>
-                    Layout desenvolvido de acordo com a identidade
-                    e o objetivo do seu negócio.
-                </p>
-
-            </article>
-
-
-
-            <article class="service-card">
-
-                <div class="icon">
-                    💬
-                </div>
-
-
-                <h3>
-                    Contato e WhatsApp
-                </h3>
-
-
-                <p>
-                    Facilite o contato dos seus clientes através
-                    de WhatsApp, formulário e outras opções.
-                </p>
-
-            </article>
-
-
-        </div>
-
+    <div class="section-title">
+        <p>MEUS TRABALHOS</p>
+        <h2>Projetos em destaque</h2>
     </div>
 
-</section>
+    <div class="portfolio-grid">
 
-
-
-<!-- =========================================================
-     PORTFÓLIO
-========================================================= -->
-
-<section
-    id="portfolio"
-    class="section portfolio-section"
->
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <span>
-                PORTFÓLIO
-            </span>
-
-
-            <h2>
-                Alguns projetos
-            </h2>
-
-
+        <article class="project">
+            <div class="project-image cake">
+                🍰
+            </div>
+            <h3>Ka Doces</h3>
             <p>
-                Projetos demonstrativos criados para mostrar
-                diferentes possibilidades de sites.
+                Site para divulgação de produtos, preços e contato
+                com a cliente.
             </p>
-
-        </div>
-
-
-
-        <!-- TECHFIX -->
-
-        <article class="portfolio-card">
-
-            <div class="portfolio-image techfix">
-
-                <div class="portfolio-preview">
-                    TechFix
-                </div>
-
-            </div>
-
-
-            <div class="portfolio-info">
-
-                <span>
-                    PROJETO DEMONSTRATIVO
-                </span>
-
-
-                <h3>
-                    TechFix Notebooks
-                </h3>
-
-
-                <p>
-                    Site para uma empresa de manutenção,
-                    assistência e suporte para notebooks.
-                </p>
-
-
-                <a
-                    href="#"
-                    class="portfolio-link"
-                >
-                    Ver projeto →
-                </a>
-
-            </div>
-
         </article>
 
-
-
-        <!-- DOCES DA CAH -->
-
-        <article class="portfolio-card">
-
-            <div class="portfolio-image doces">
-
-                <div class="portfolio-preview">
-                    Doces da Cah
-                </div>
-
+        <article class="project">
+            <div class="project-image notebook">
+                💻
             </div>
-
-
-            <div class="portfolio-info">
-
-                <span>
-                    PROJETO DEMONSTRATIVO
-                </span>
-
-
-                <h3>
-                    Doces da Cah
-                </h3>
-
-
-                <p>
-                    Site profissional para uma empresa de doces,
-                    bolos e salgados.
-                </p>
-
-
-                <a
-                    href="#"
-                    class="portfolio-link"
-                >
-                    Ver projeto →
-                </a>
-
-            </div>
-
+            <h3>Tech Notebook</h3>
+            <p>
+                Página profissional para serviços de manutenção
+                de notebooks e computadores.
+            </p>
         </article>
 
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     PLANOS
-========================================================= -->
-
-<section
-    id="planos"
-    class="section"
->
-
-    <div class="container">
-
-
-        <div class="section-title">
-
-            <span>
-                PLANOS
-            </span>
-
-
-            <h2>
-                Escolha o site ideal para o seu negócio
-            </h2>
-
-
-            <p>
-                Valores iniciais para criação do seu site.
-            </p>
-
-        </div>
-
-
-
-        <div class="plans">
-
-
-            <!-- ESSENCIAL -->
-
-            <article class="plan">
-
-                <h3>
-                    Essencial
-                </h3>
-
-
-                <div class="price">
-
-                    <small>
-                        R$
-                    </small>
-
-                    250
-
-                </div>
-
-
-                <p class="plan-description">
-
-                    Para quem precisa de uma presença
-                    profissional na internet.
-
-                </p>
-
-
-                <ul>
-
-                    <li>
-                        ✓ Site responsivo
-                    </li>
-
-                    <li>
-                        ✓ Informações da empresa
-                    </li>
-
-                    <li>
-                        ✓ Botão para WhatsApp
-                    </li>
-
-                    <li>
-                        ✓ Design profissional
-                    </li>
-
-                </ul>
-
-
-                <a
-                    href="#contato"
-                    class="btn plan-btn"
-                >
-                    Quero este plano
-                </a>
-
-            </article>
-
-
-
-            <!-- PROFISSIONAL -->
-
-            <article class="plan featured">
-
-                <div class="popular">
-                    MAIS ESCOLHIDO
-                </div>
-
-
-                <h3>
-                    Profissional
-                </h3>
-
-
-                <div class="price">
-
-                    <small>
-                        R$
-                    </small>
-
-                    400
-
-                </div>
-
-
-                <p class="plan-description">
-
-                    Para negócios que querem apresentar
-                    mais informações e produtos.
-
-                </p>
-
-
-                <ul>
-
-                    <li>
-                        ✓ Tudo do Essencial
-                    </li>
-
-                    <li>
-                        ✓ Seções adicionais
-                    </li>
-
-                    <li>
-                        ✓ Galeria de imagens
-                    </li>
-
-                    <li>
-                        ✓ Catálogo de produtos
-                    </li>
-
-                    <li>
-                        ✓ Formulário de contato
-                    </li>
-
-                </ul>
-
-
-                <a
-                    href="#contato"
-                    class="btn primary plan-btn"
-                >
-                    Quero este plano
-                </a>
-
-            </article>
-
-
-
-            <!-- COMPLETO -->
-
-            <article class="plan">
-
-                <h3>
-                    Completo
-                </h3>
-
-
-                <div class="price">
-
-                    <small>
-                        R$
-                    </small>
-
-                    600
-
-                </div>
-
-
-                <p class="plan-description">
-
-                    Para quem precisa de um projeto
-                    mais completo e personalizado.
-
-                </p>
-
-
-                <ul>
-
-                    <li>
-                        ✓ Tudo do Profissional
-                    </li>
-
-                    <li>
-                        ✓ Catálogo completo
-                    </li>
-
-                    <li>
-                        ✓ Recursos personalizados
-                    </li>
-
-                    <li>
-                        ✓ Animações
-                    </li>
-
-                    <li>
-                        ✓ Configuração para publicação
-                    </li>
-
-                </ul>
-
-
-                <a
-                    href="#contato"
-                    class="btn plan-btn"
-                >
-                    Quero este plano
-                </a>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     CONTATO
-========================================================= -->
-
-<section
-    id="contato"
-    class="section contact-section"
->
-
-    <div class="container contact">
-
-
-        <!-- INFORMAÇÕES -->
-
-        <div class="contact-text">
-
-
-            <span>
-                VAMOS CONVERSAR?
-            </span>
-
-
-            <h2>
-                Pronto para colocar
-                seu negócio na internet?
-            </h2>
-
-
-            <p>
-                Entre em contato e conte um pouco sobre
-                o site que você gostaria de criar.
-            </p>
-
-
-
-            <div class="contact-info">
-
-
-                <!-- E-MAIL -->
-
-                <div>
-
-                    <strong>
-                        E-mail
-                    </strong>
-
-
-                    <a
-                        href="mailto:alexsites.contato@gmail.com"
-                    >
-                        alexsites.contato@gmail.com
-                    </a>
-
-                </div>
-
-
-
-                <!-- FACEBOOK -->
-
-                <div>
-
-                    <strong>
-                        Facebook
-                    </strong>
-
-
-                    <a
-                        href="https://www.facebook.com/profile.php?id=61594842238804"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="facebook-link"
-                    >
-                        💬 Fale comigo pelo Facebook
-                    </a>
-
-                </div>
-
-
+        <article class="project">
+            <div class="project-image alex">
+                🌐
             </div>
+            <h3>Alex Sites</h3>
+            <p>
+                Meu próprio site profissional para apresentar
+                serviços e portfólio.
+            </p>
+        </article>
 
+    </div>
+
+</section>
+
+
+<section class="plans" id="planos">
+
+    <div class="section-title">
+        <p>PLANOS</p>
+        <h2>Escolha seu site</h2>
+    </div>
+
+    <div class="plans-grid">
+
+        <div class="plan">
+            <h3>Essencial</h3>
+            <div class="price">R$ 250</div>
+
+            <ul>
+                <li>Site responsivo</li>
+                <li>Informações da empresa</li>
+                <li>Botão de contato</li>
+                <li>Integração com WhatsApp</li>
+            </ul>
+
+            <a href="#contato" class="plan-btn">Quero este</a>
         </div>
 
 
+        <div class="plan destaque">
+            <div class="badge">MAIS PROCURADO</div>
 
-        <!-- =================================================
-             FORMULÁRIO FORMSUBMIT
-        ================================================== -->
+            <h3>Profissional</h3>
+            <div class="price">R$ 400</div>
 
-        <div class="contact-box">
+            <ul>
+                <li>Site responsivo</li>
+                <li>Seções extras</li>
+                <li>Galeria de imagens</li>
+                <li>Catálogo de produtos</li>
+                <li>Formulário de contato</li>
+            </ul>
 
-
-            <h3>
-                Solicite seu orçamento
-            </h3>
-
-
-            <p>
-                Preencha o formulário e entrarei em contato.
-            </p>
-
-
-
-            <form
-                id="contactForm"
-                action="https://formsubmit.co/alexsites.contato@gmail.com"
-                method="POST"
-            >
+            <a href="#contato" class="plan-btn">Quero este</a>
+        </div>
 
 
-                <!-- ASSUNTO DO E-MAIL -->
+        <div class="plan">
+            <h3>Completo</h3>
+            <div class="price">R$ 600</div>
 
-                <input
-                    type="hidden"
-                    name="_subject"
-                    value="Novo pedido de orçamento - Alex Sites"
-                >
+            <ul>
+                <li>Catálogo completo</li>
+                <li>Recursos personalizados</li>
+                <li>Animações</li>
+                <li>Configuração de publicação</li>
+                <li>Personalização avançada</li>
+            </ul>
 
-
-                <!-- MODELO DO E-MAIL -->
-
-                <input
-                    type="hidden"
-                    name="_template"
-                    value="table"
-                >
-
-
-                <!-- DESATIVA CAPTCHA -->
-
-                <input
-                    type="hidden"
-                    name="_captcha"
-                    value="false"
-                >
-
-
-
-                <!-- NOME -->
-
-                <label for="name">
-                    Nome
-                </label>
-
-
-                <input
-                    type="text"
-                    id="name"
-                    name="nome"
-                    placeholder="Seu nome"
-                    required
-                >
-
-
-
-                <!-- E-MAIL -->
-
-                <label for="email">
-                    E-mail
-                </label>
-
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="seuemail@email.com"
-                    required
-                >
-
-
-
-                <!-- MENSAGEM -->
-
-                <label for="message">
-                    Conte sobre seu projeto
-                </label>
-
-
-                <textarea
-                    id="message"
-                    name="mensagem"
-                    rows="5"
-                    placeholder="Quero criar um site para..."
-                    required
-                ></textarea>
-
-
-
-                <!-- BOTÃO -->
-
-                <button
-                    type="submit"
-                    class="btn primary"
-                >
-                    Enviar mensagem
-                </button>
-
-
-            </form>
-
-
-            <div id="formMessage"></div>
-
-
+            <a href="#contato" class="plan-btn">Quero este</a>
         </div>
 
     </div>
 
 </section>
 
+
+<section class="contact" id="contato">
+
+    <div class="section-title">
+        <p>VAMOS CONVERSAR</p>
+        <h2>Quer colocar seu negócio na internet?</h2>
+    </div>
+
+    <p>
+        Entre em contato e conte um pouco sobre o seu projeto.
+    </p>
+
+    <a href="https://m.me/" target="_blank" class="btn-primary">
+        Falar pelo Messenger
+    </a>
+
+</section>
 
 </main>
 
 
-
-<!-- =========================================================
-     RODAPÉ
-========================================================= -->
-
 <footer>
-
-    <div class="container footer-content">
-
-
-        <div>
-
-            <a
-                href="#inicio"
-                class="logo"
-            >
-                Alex<span>Sites</span>
-            </a>
-
-
-            <p>
-                Criação de sites profissionais.
-            </p>
-
-        </div>
-
-
-
-        <div class="footer-contact">
-
-
-            <a
-                href="mailto:alexsites.contato@gmail.com"
-            >
-                alexsites.contato@gmail.com
-            </a>
-
-
-            <p>
-                © 2026 Alex Sites. Todos os direitos reservados.
-            </p>
-
-        </div>
-
-
-    </div>
-
+    <p>© 2026 Alex Sites — Criação de Sites</p>
 </footer>
 
 
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
