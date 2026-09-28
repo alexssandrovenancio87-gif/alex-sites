@@ -1525,5 +1525,826 @@ footer {
     .contact-info .facebook-link {
         max-width: 100%;
     }
+}/* =========================================================
+   ALEX SITES — AJUSTES DA VERSÃO ATUAL
+   Hero + Slideshow + Portfólio + Planos
+========================================================= */
+
+
+/* =========================================================
+   HEADER ATUAL
+========================================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 5%;
+
+    background: rgba(8, 6, 13, 0.88);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+
+/* =========================================================
+   HERO ATUAL
+========================================================= */
+
+.hero {
+    width: min(1180px, 90%);
+
+    min-height: 650px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.85fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    background: none;
+
+    overflow: visible;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+
+    max-width: 650px;
+}
+
+.mini-title {
+    display: inline-flex;
+
+    align-items: center;
+
+    color: var(--purple-light);
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 2.5px;
+
+    margin-bottom: 20px;
+}
+
+.mini-title::before {
+    content: "";
+
+    width: 22px;
+    height: 2px;
+
+    margin-right: 9px;
+
+    border-radius: 10px;
+
+    background: var(--purple);
+}
+
+.hero-text h1 {
+    margin-bottom: 25px;
+}
+
+.hero-text > p:not(.mini-title) {
+    color: var(--muted);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    max-width: 600px;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================================================
+   BOTÕES DO HERO ATUAL
+========================================================= */
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 51px;
+
+    padding: 0 25px;
+
+    border-radius: 11px;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.btn-primary {
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b45cff,
+            #7e22ce
+        );
+
+    box-shadow:
+        0 12px 35px rgba(168, 85, 247, 0.22);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 18px 45px rgba(168, 85, 247, 0.34);
+}
+
+.btn-secondary {
+    color: var(--text);
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-3px);
+
+    border-color: var(--border-hover);
+
+    background: rgba(168, 85, 247, 0.06);
+}
+
+
+/* =========================================================
+   SLIDESHOW
+========================================================= */
+
+.portfolio-slider {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 390px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(168, 85, 247, 0.24);
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(168, 85, 247, 0.15),
+            rgba(8, 6, 13, 0.96) 70%
+        );
+
+    box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.45),
+        inset 0 1px rgba(255, 255, 255, 0.05);
+}
+
+
+/* brilho decorativo */
+
+.portfolio-slider::before {
+    content: "";
+
+    position: absolute;
+
+    width: 240px;
+    height: 240px;
+
+    top: -110px;
+    right: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(168, 85, 247, 0.15);
+
+    filter: blur(50px);
+}
+
+
+/* =========================================================
+   CARDS DO SLIDE
+========================================================= */
+
+.slider-card {
+    position: absolute;
+
+    inset: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 35px;
+
+    border-radius: 19px;
+
+    border: 1px solid rgba(168, 85, 247, 0.14);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.012)
+        );
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateX(35px) scale(0.97);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease,
+        visibility 0.5s ease;
+}
+
+.slider-card.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateX(0) scale(1);
+}
+
+
+/* =========================================================
+   ÍCONE DO PROJETO
+========================================================= */
+
+.project-icon {
+    width: 92px;
+    height: 92px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    border-radius: 25px;
+
+    font-size: 45px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(168, 85, 247, 0.24),
+            rgba(168, 85, 247, 0.05)
+        );
+
+    border: 1px solid rgba(168, 85, 247, 0.25);
+
+    box-shadow:
+        0 15px 45px rgba(168, 85, 247, 0.15);
+}
+
+.slider-card p {
+    color: var(--purple-light);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 9px;
+}
+
+.slider-card h3 {
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.slider-card span {
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SETAS
+========================================================= */
+
+.slider-btn {
+    position: absolute;
+
+    z-index: 5;
+
+    top: 50%;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-50%);
+
+    border: 1px solid rgba(168, 85, 247, 0.28);
+
+    border-radius: 50%;
+
+    color: white;
+
+    background: rgba(8, 6, 13, 0.78);
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.slider-btn:hover {
+    background: rgba(168, 85, 247, 0.20);
+
+    border-color: var(--purple);
+
+    transform: translateY(-50%) scale(1.08);
+}
+
+.slider-btn.prev {
+    left: 15px;
+}
+
+.slider-btn.next {
+    right: 15px;
+}
+
+
+/* =========================================================
+   BOLINHAS
+========================================================= */
+
+.slider-dots {
+    position: absolute;
+
+    z-index: 6;
+
+    bottom: 17px;
+
+    left: 50%;
+
+    display: flex;
+
+    gap: 8px;
+
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.20);
+
+    cursor: pointer;
+
+    transition:
+        width 0.25s ease,
+        background 0.25s ease;
+}
+
+.dot.active {
+    width: 25px;
+
+    border-radius: 20px;
+
+    background: var(--purple);
+}
+
+
+/* =========================================================
+   PORTFÓLIO ATUAL
+========================================================= */
+
+.portfolio {
+    width: min(1180px, 90%);
+
+    margin: 0 auto;
+
+    padding: 110px 0;
+}
+
+.portfolio-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.project {
+    padding: 0 0 25px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    background: var(--card);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-7px);
+
+    border-color: var(--border-hover);
+}
+
+.project-image {
+    min-height: 190px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 65px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(168, 85, 247, 0.20),
+            rgba(8, 6, 13, 0.98)
+        );
+}
+
+.project h3,
+.project p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.project h3 {
+    margin-top: 22px;
+
+    margin-bottom: 8px;
+
+    font-size: 21px;
+}
+
+.project p {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PLANOS ATUAIS
+========================================================= */
+
+.plans {
+    width: min(1180px, 90%);
+
+    margin: 0 auto;
+
+    padding: 110px 0;
+}
+
+.plans-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.plans .plan {
+    padding: 35px;
+
+    min-height: 420px;
+}
+
+.plan.destaque {
+    border-color: rgba(168, 85, 247, 0.65);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(168, 85, 247, 0.11),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(168, 85, 247, 0.09);
+}
+
+.badge {
+    display: inline-flex;
+
+    padding: 6px 11px;
+
+    margin-bottom: 18px;
+
+    border-radius: 999px;
+
+    color: var(--purple-light);
+
+    background: rgba(168, 85, 247, 0.13);
+
+    border: 1px solid rgba(168, 85, 247, 0.20);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+.plan ul {
+    margin: 25px 0;
+}
+
+.plan-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 0 20px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #a855f7,
+            #7e22ce
+        );
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.plan-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(168, 85, 247, 0.25);
+}
+
+
+/* =========================================================
+   CONTATO ATUAL
+========================================================= */
+
+.contact {
+    width: min(1180px, 90%);
+
+    margin: 0 auto;
+
+    padding: 110px 0;
+
+    text-align: center;
+}
+
+.contact > p {
+    color: var(--muted);
+
+    max-width: 650px;
+
+    margin: -30px auto 30px;
+
+    font-size: 15px;
+}
+
+.contact .btn-primary {
+    display: inline-flex;
+}
+
+
+/* =========================================================
+   FOOTER ATUAL
+========================================================= */
+
+footer {
+    text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE DO SLIDESHOW
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 80px 0;
+    }
+
+    .hero-text {
+        max-width: 750px;
+    }
+
+    .portfolio-slider {
+        width: 100%;
+
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+    .portfolio-grid,
+    .plans-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 17px 5%;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+    nav {
+        gap: 12px 17px;
+    }
+
+    .hero {
+        width: 90%;
+
+        padding: 65px 0;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(39px, 12vw, 56px);
+
+        letter-spacing: -2.5px;
+    }
+
+    .hero-text > p:not(.mini-title) {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+    }
+
+    .portfolio-slider {
+        min-height: 340px;
+
+        border-radius: 20px;
+    }
+
+    .slider-card {
+        inset: 35px 30px 45px;
+    }
+
+    .project-icon {
+        width: 75px;
+        height: 75px;
+
+        font-size: 36px;
+    }
+
+    .slider-card h3 {
+        font-size: 25px;
+    }
+
+    .slider-btn {
+        width: 37px;
+        height: 37px;
+
+        font-size: 25px;
+    }
+
+    .slider-btn.prev {
+        left: 10px;
+    }
+
+    .slider-btn.next {
+        right: 10px;
+    }
+
+    .portfolio,
+    .plans,
+    .contact {
+        padding: 80px 0;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .portfolio-slider {
+        min-height: 315px;
+    }
+
+    .slider-card {
+        inset: 30px 25px 43px;
+
+        padding: 20px;
+    }
+
+    .project-icon {
+        width: 68px;
+        height: 68px;
+
+        margin-bottom: 18px;
+
+        font-size: 32px;
+    }
+
+    .slider-card h3 {
+        font-size: 22px;
+    }
+
+    .slider-card span {
+        font-size: 12px;
+    }
+
 }
 
