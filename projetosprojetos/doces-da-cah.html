@@ -1,366 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Doces da Cah | Projeto — Alex Sites</title>
-
-    <link rel="stylesheet" href="../style.css">
-
-    <style>
-
-        .project-page {
-            min-height: 100vh;
-            padding: 110px 7% 70px;
-        }
-
-        .project-header {
-            max-width: 900px;
-            margin: 0 auto 50px;
-            text-align: center;
-        }
-
-        .project-header .mini-title {
-            color: #a855f7;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        .project-header h1 {
-            font-size: clamp(2.2rem, 5vw, 4rem);
-            margin-bottom: 15px;
-        }
-
-        .project-header h1 span {
-            color: #a855f7;
-        }
-
-        .project-header p {
-            color: #aaa;
-            font-size: 17px;
-            line-height: 1.7;
-        }
-
-        .preview-box {
-            max-width: 1100px;
-            margin: 0 auto 55px;
-            padding: 12px;
-            background: #15101d;
-            border: 1px solid rgba(168, 85, 247, .35);
-            border-radius: 20px;
-            box-shadow: 0 0 40px rgba(168, 85, 247, .12);
-        }
-
-        .preview-browser {
-            background: #09070d;
-            border-radius: 14px;
-            overflow: hidden;
-        }
-
-        .browser-bar {
-            height: 42px;
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            padding: 0 16px;
-            background: #17121f;
-        }
-
-        .browser-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: #555;
-        }
-
-        .preview-content {
-            min-height: 480px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 50px 20px;
-            background:
-                radial-gradient(circle at center, rgba(168,85,247,.15), transparent 55%),
-                #09070d;
-        }
-
-        .preview-content .cake-icon {
-            font-size: 90px;
-            margin-bottom: 20px;
-        }
-
-        .preview-content h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .preview-content p {
-            color: #aaa;
-        }
-
-        .project-info {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-        }
-
-        .info-card {
-            padding: 30px;
-            background: #15101d;
-            border: 1px solid rgba(255,255,255,.07);
-            border-radius: 18px;
-        }
-
-        .info-card h3 {
-            margin-bottom: 15px;
-            font-size: 21px;
-        }
-
-        .info-card p {
-            color: #aaa;
-            line-height: 1.7;
-        }
-
-        .features {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .features li {
-            color: #ccc;
-            padding: 9px 0;
-        }
-
-        .features li::before {
-            content: "✓";
-            color: #a855f7;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-
-        .project-cta {
-            text-align: center;
-            margin-top: 55px;
-        }
-
-        .project-cta h2 {
-            margin-bottom: 12px;
-        }
-
-        .project-cta p {
-            color: #aaa;
-            margin-bottom: 25px;
-        }
-
-        .project-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-top: 35px;
-            color: #aaa;
-            text-decoration: none;
-        }
-
-        .back-link:hover {
-            color: #a855f7;
-        }
-
-        @media (max-width: 700px) {
-
-            .project-page {
-                padding: 90px 5% 50px;
-            }
-
-            .project-info {
-                grid-template-columns: 1fr;
-            }
-
-            .preview-content {
-                min-height: 350px;
-            }
-
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doces da Cah | Bolos, Doces e Salgados</title>
+<meta name="description" content="Doces da Cah — bolos, doces, salgados e kits para deixar seus momentos ainda mais especiais.">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-
-    <div class="logo">
-        Alex<span>Sites</span>
-    </div>
-
+<header class="header">
+  <div class="container nav">
+    <a href="#inicio" class="logo">Doces<span>da Cah</span></a>
     <nav>
-        <a href="../index.html">Início</a>
-        <a href="../index.html#portfolio">Portfólio</a>
-        <a href="../index.html#planos">Planos</a>
-        <a href="../index.html#contato">Contato</a>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#entrega">Entrega</a>
+      <a href="#contato">Contato</a>
     </nav>
-
+  </div>
 </header>
 
-
 <main>
-
-<section class="project-page">
-
-    <div class="project-header">
-
-        <p class="mini-title">
-            PROJETO EM DESTAQUE
-        </p>
-
-        <h1>
-            Doces <span>da Cah</span>
-        </h1>
-
-        <p>
-            Um modelo de site profissional criado para apresentar
-            produtos de confeitaria, preços e facilitar o contato
-            com os clientes.
-        </p>
-
+<section id="inicio" class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <span class="tag">DOCES • BOLOS • SALGADOS</span>
+      <h1>Sabor que transforma <span>momentos especiais.</span></h1>
+      <p>Bolos, doces, salgados e kits preparados com carinho para festas, comemorações e momentos inesquecíveis.</p>
+      <div class="hero-buttons">
+        <a href="#produtos" class="btn primary">Ver produtos</a>
+        <a href="#contato" class="btn secondary">Fazer orçamento</a>
+      </div>
     </div>
-
-
-    <div class="preview-box">
-
-        <div class="preview-browser">
-
-            <div class="browser-bar">
-
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-                <span class="browser-dot"></span>
-
-            </div>
-
-            <div class="preview-content">
-
-                <div>
-
-                    <div class="cake-icon">
-                        🍰
-                    </div>
-
-                    <h2>
-                        Doces da Cah
-                    </h2>
-
-                    <p>
-                        Site profissional para confeitaria
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
+    <div class="hero-card">
+      <div class="hero-decoration">🍰</div>
+      <div class="hero-card-text">
+        <span>FEITO COM CARINHO</span>
+        <strong>Doces da Cah</strong>
+        <p>Um toque especial para sua festa.</p>
+      </div>
     </div>
-
-
-    <div class="project-info">
-
-        <div class="info-card">
-
-            <h3>
-                Sobre o projeto
-            </h3>
-
-            <p>
-                Este modelo foi desenvolvido para pequenos negócios
-                que precisam apresentar seus produtos de maneira
-                profissional na internet e facilitar o contato
-                com seus clientes.
-            </p>
-
-        </div>
-
-
-        <div class="info-card">
-
-            <h3>
-                Recursos
-            </h3>
-
-            <ul class="features">
-
-                <li>Design moderno</li>
-                <li>Responsivo para celular</li>
-                <li>Apresentação de produtos</li>
-                <li>Preços e informações</li>
-                <li>Área de contato</li>
-                <li>Navegação simples</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-
-    <div class="project-cta">
-
-        <h2>
-            Gostou desse modelo?
-        </h2>
-
-        <p>
-            Podemos criar um site parecido para o seu negócio.
-        </p>
-
-        <div class="project-buttons">
-
-            <a
-                href="../index.html#contato"
-                class="btn-primary">
-                Quero um site assim
-            </a>
-
-            <a
-                href="../index.html#portfolio"
-                class="btn-secondary">
-                Ver outros projetos
-            </a>
-
-        </div>
-
-        <a
-            href="../index.html"
-            class="back-link">
-            ← Voltar para Alex Sites
-        </a>
-
-    </div>
-
+  </div>
 </section>
 
+<section id="produtos" class="section">
+  <div class="container">
+    <div class="section-title">
+      <span>NOSSO CARDÁPIO</span>
+      <h2>Delícias para todos os momentos</h2>
+      <p>Confira algumas das opções disponíveis para sua comemoração.</p>
+    </div>
+    <div class="products">
+      <article class="product-card"><div class="product-icon">🎂</div><div class="product-info"><span>BOLOS</span><h3>Bolo de 1 kg</h3><p>Bolo preparado especialmente para comemorações e momentos especiais.</p><strong class="price">R$ 70,00</strong></div></article>
+      <article class="product-card"><div class="product-icon">🍰</div><div class="product-info"><span>BOLOS</span><h3>Bolo de 2 kg</h3><p>Uma opção maior para compartilhar com a família e os convidados.</p><strong class="price">R$ 90,00</strong></div></article>
+      <article class="product-card"><div class="product-icon">🥟</div><div class="product-info"><span>SALGADOS</span><h3>Salgadinhos gourmet</h3><p>Salgadinhos preparados para festas, eventos e comemorações.</p><strong class="price">R$ 95,00 / cento</strong></div></article>
+      <article class="product-card"><div class="product-icon">🎉</div><div class="product-info"><span>FESTAS</span><h3>Kit Festa</h3><p>Uma opção prática para deixar sua comemoração ainda mais completa.</p><strong class="price">Consulte o valor</strong></div></article>
+      <article class="product-card"><div class="product-icon">🍫</div><div class="product-info"><span>DOCES</span><h3>Brigadeiros</h3><p>Brigadeiros deliciosos para festas, comemorações ou para adoçar o seu dia.</p><strong class="price">Consulte o valor</strong></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="section about">
+  <div class="container about-content">
+    <div class="about-image"><div class="about-placeholder">🍰</div></div>
+    <div class="about-text">
+      <span>SOBRE A DOCES DA CAH</span>
+      <h2>Feito com carinho para você.</h2>
+      <p>Cada pedido é preparado com cuidado para transformar momentos simples em lembranças especiais.</p>
+      <p>Trabalhamos com bolos, doces e salgados para festas, aniversários, reuniões e outras ocasiões especiais.</p>
+      <div class="about-highlight"><strong>Qualidade e carinho</strong><span> em cada pedido.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="entrega" class="section delivery">
+  <div class="container">
+    <div class="section-title"><span>FACILIDADE PARA VOCÊ</span><h2>Receba seu pedido do jeito que preferir</h2><p>Escolha a melhor opção para receber suas delícias.</p></div>
+    <div class="delivery-grid">
+      <div class="delivery-card"><div class="delivery-icon">🏠</div><h3>Retirada</h3><p>Retire seu pedido diretamente no local combinado.</p><span class="delivery-label">DISPONÍVEL</span></div>
+      <div class="delivery-card"><div class="delivery-icon">🛵</div><h3>Entrega</h3><p>Consulte a disponibilidade e a taxa de entrega para sua região.</p><span class="delivery-label">CONSULTE</span></div>
+      <div class="delivery-card"><div class="delivery-icon">🍔</div><h3>iFood</h3><p>Consulte os produtos disponíveis para pedido através do iFood.</p><button class="btn primary demo" type="button">Pedir pelo iFood</button></div>
+      <div class="delivery-card"><div class="delivery-icon">🚗</div><h3>Entrega por aplicativo</h3><p>Também é possível utilizar serviços de entrega por aplicativo, conforme disponibilidade.</p><button class="btn secondary demo" type="button">Consultar entrega</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section payments">
+  <div class="container">
+    <div class="section-title"><span>PAGAMENTO</span><h2>Formas de pagamento</h2><p>Escolha a forma de pagamento mais conveniente.</p></div>
+    <div class="payment-grid">
+      <div class="payment-card"><div class="payment-icon">💚</div><h3>Pix</h3><p>Pagamento rápido e prático.</p></div>
+      <div class="payment-card"><div class="payment-icon">💳</div><h3>Cartão</h3><p>Crédito ou débito, conforme disponibilidade.</p></div>
+      <div class="payment-card"><div class="payment-icon">💵</div><h3>Dinheiro</h3><p>Consulte as condições no momento do pedido.</p></div>
+    </div>
+    <div class="payment-notice"><strong>🔒 Pagamento seguro</strong><p>As formas de pagamento podem ser configuradas de acordo com as opções utilizadas pelo estabelecimento.</p></div>
+  </div>
+</section>
+
+<section class="section how-to">
+  <div class="container">
+    <div class="section-title"><span>COMO PEDIR</span><h2>É simples fazer seu pedido</h2></div>
+    <div class="steps">
+      <div class="step"><div class="step-number">01</div><h3>Escolha</h3><p>Confira nosso cardápio e escolha seus produtos favoritos.</p></div>
+      <div class="step"><div class="step-number">02</div><h3>Solicite</h3><p>Entre em contato para consultar disponibilidade e valores.</p></div>
+      <div class="step"><div class="step-number">03</div><h3>Combine</h3><p>Defina pagamento, retirada ou entrega do seu pedido.</p></div>
+      <div class="step"><div class="step-number">04</div><h3>Aproveite</h3><p>Receba seu pedido e aproveite cada momento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="section contact">
+  <div class="container contact-content">
+    <div class="contact-text">
+      <span>FAÇA SEU PEDIDO</span><h2>Vamos preparar algo especial para você?</h2>
+      <p>Entre em contato para consultar disponibilidade, fazer seu pedido ou solicitar um orçamento.</p>
+      <div class="contact-info">
+        <div>📱 <strong>Atendimento</strong><span>Consulte os canais disponíveis</span></div>
+        <div>📍 <strong>Região de atendimento</strong><span>Consulte disponibilidade de entrega</span></div>
+      </div>
+    </div>
+    <div class="contact-box">
+      <h3>Solicite seu orçamento</h3>
+      <form id="orderForm">
+        <label for="nome">Nome</label><input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+        <label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="seuemail@email.com" required>
+        <label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000">
+        <label for="pedido">O que você gostaria de pedir?</label><textarea id="pedido" name="pedido" rows="5" placeholder="Exemplo: Gostaria de um bolo de 2 kg e 100 salgadinhos..." required></textarea>
+        <label for="pagamento">Forma de pagamento</label>
+        <select id="pagamento" name="pagamento"><option value="">Selecione</option><option>Pix</option><option>Cartão</option><option>Dinheiro</option></select>
+        <label for="entrega">Como deseja receber?</label>
+        <select id="entrega" name="entrega"><option value="">Selecione</option><option>Retirada</option><option>Entrega</option><option>iFood</option><option>Aplicativo de entrega</option></select>
+        <button type="submit" class="btn primary">Solicitar orçamento</button>
+      </form>
+    </div>
+  </div>
+</section>
 </main>
 
-
 <footer>
-
-    <p>
-        © 2026 Alex Sites — Criação de Sites
-    </p>
-
+  <div class="container footer-content">
+    <div><a href="#inicio" class="logo">Doces<span>da Cah</span></a><p>Bolos, doces e salgados feitos com carinho.</p></div>
+    <div><p>© 2026 Doces da Cah.</p><p>Site demonstrativo desenvolvido por <strong>Alex Sites</strong>.</p></div>
+  </div>
 </footer>
 
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", e => {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (target) { e.preventDefault(); target.scrollIntoView({behavior:"smooth", block:"start"}); }
+  });
+});
+document.getElementById("orderForm").addEventListener("submit", e => {
+  e.preventDefault();
+  alert("Demonstração: aqui o pedido será enviado para o contato real do cliente.");
+});
+document.querySelectorAll(".demo").forEach(btn => btn.addEventListener("click", () => {
+  alert("Demonstração: aqui será colocado o link real do serviço utilizado pelo cliente.");
+}));
+const cards = document.querySelectorAll(".product-card, .delivery-card, .payment-card, .step");
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add("show-card"); observer.unobserve(entry.target); }
+    });
+  }, {threshold:.12});
+  cards.forEach(card => observer.observe(card));
+}
+</script>
 </body>
 </html>
