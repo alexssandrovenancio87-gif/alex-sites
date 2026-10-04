@@ -577,51 +577,150 @@
 
 
 
-    <!-- FORMULÁRIO DE ORÇAMENTO -->
+   
+<!-- =====================================================
+     FORMULÁRIO DE ORÇAMENTO
+====================================================== -->
 
-    <form
-        class="budget-form"
-        action="mailto:alexsites.contato@gmail.com"
-        method="post"
-        enctype="text/plain"
+<form
+    class="budget-form"
+    action="https://formsubmit.co/alexsites.contato@gmail.com"
+    method="POST"
+>
+
+    <!-- Configurações do envio -->
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="Novo orçamento — Alex Sites"
+    >
+
+    <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+    >
+
+    <input
+        type="hidden"
+        name="_template"
+        value="table"
     >
 
 
-        <div class="form-group">
+    <div class="form-group">
 
-            <label for="nome">
-                Nome
-            </label>
+        <label for="nome">
+            Nome
+        </label>
 
+        <input
+            type="text"
+            id="nome"
+            name="Nome"
+            placeholder="Seu nome"
+            required
+        >
 
-            <input
-                type="text"
-                id="nome"
-                name="Nome"
-                placeholder="Seu nome"
-                required
-            >
-
-        </div>
-
+    </div>
 
 
-        <div class="form-group">
+    <div class="form-group">
 
-            <label for="email">
-                E-mail
-            </label>
+        <label for="email">
+            E-mail
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="E-mail"
+            placeholder="seuemail@exemplo.com"
+            required
+        >
+
+    </div>
 
 
-            <input
-                type="email"
-                id="email"
-                name="E-mail"
-                placeholder="seuemail@exemplo.com"
-                required
-            >
+    <div class="form-group">
 
-        </div>
+        <label for="whatsapp">
+            WhatsApp
+        </label>
+
+        <input
+            type="tel"
+            id="whatsapp"
+            name="WhatsApp"
+            placeholder="(00) 00000-0000"
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="tipo-site">
+            Tipo de site
+        </label>
+
+        <select
+            id="tipo-site"
+            name="Tipo de site"
+            required
+        >
+
+            <option value="">
+                Selecione uma opção
+            </option>
+
+            <option value="Site Essencial - R$ 250">
+                Site Essencial — R$ 250
+            </option>
+
+            <option value="Site Profissional - R$ 400">
+                Site Profissional — R$ 400
+            </option>
+
+            <option value="Site Completo - R$ 600">
+                Site Completo — R$ 600
+            </option>
+
+            <option value="Projeto personalizado">
+                Projeto personalizado
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label for="mensagem">
+            Conte sobre seu projeto
+        </label>
+
+        <textarea
+            id="mensagem"
+            name="Mensagem"
+            rows="6"
+            placeholder="Conte o que você gostaria que o seu site tivesse..."
+            required
+        ></textarea>
+
+    </div>
+
+
+    <button
+        type="submit"
+        class="budget-btn"
+    >
+        Solicitar orçamento
+    </button>
+
+</form>
 
 
 
