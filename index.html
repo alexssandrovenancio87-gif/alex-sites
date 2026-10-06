@@ -1,33 +1,33 @@
-
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
 
-    <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+<meta charset="UTF-8">
 
-    <title>Alex Sites | Criação de Sites</title>
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-    <meta
-        name="description"
-        content="Alex Sites — criação de sites profissionais, modernos e responsivos para empresas e pequenos negócios."
-    >
+<title>Alex Sites | Criação de Sites</title>
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+<meta
+    name="description"
+    content="Alex Sites — criação de sites profissionais, modernos e responsivos para empresas e pequenos negócios."
+>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
 
 </head>
 
-
 <body>
-
 
 <!-- =====================================================
      HEADER
@@ -35,37 +35,35 @@
 
 <header>
 
-    <div class="logo">
-        Alex<span>Sites</span>
-    </div>
 
+<div class="logo">
+    Alex<span>Sites</span>
+</div>
 
-    <nav>
+<nav>
 
-        <a href="#inicio">
-            Início
-        </a>
+    <a href="#inicio">
+        Início
+    </a>
 
-        <a href="#portfolio">
-            Portfólio
-        </a>
+    <a href="#portfolio">
+        Portfólio
+    </a>
 
-        <a href="#planos">
-            Planos
-        </a>
+    <a href="#planos">
+        Planos
+    </a>
 
-        <a href="#contato">
-            Contato
-        </a>
+    <a href="#contato">
+        Contato
+    </a>
 
-    </nav>
+</nav>
+
 
 </header>
 
-
-
 <main>
-
 
 <!-- =====================================================
      HERO
@@ -77,209 +75,172 @@
 >
 
 
-    <div class="hero-text">
+<div class="hero-text">
+
+    <p class="mini-title">
+        CRIAÇÃO DE SITES
+    </p>
+
+    <h1>
+
+        Seu negócio merece
+
+        <span>
+            um site profissional.
+        </span>
+
+    </h1>
+
+    <p>
+        Sites modernos, responsivos e pensados para apresentar
+        sua empresa, seus produtos e seus serviços na internet.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a
+            href="#portfolio"
+            class="btn-primary"
+        >
+            Ver portfólio
+        </a>
+
+        <a
+            href="#contato"
+            class="btn-secondary"
+        >
+            Pedir orçamento
+        </a>
+
+    </div>
+
+</div>
 
 
-        <p class="mini-title">
-            CRIAÇÃO DE SITES
-        </p>
+<!-- =================================================
+     SLIDE DO PORTFÓLIO
+================================================== -->
 
+<div class="portfolio-slider">
 
-        <h1>
+    <!-- PROJETO 01 -->
 
-            Seu negócio merece
+    <div class="slider-card active">
 
-            <span>
-                um site profissional.
-            </span>
-
-        </h1>
-
+        <div class="project-icon">
+            🍰
+        </div>
 
         <p>
-
-            Sites modernos, responsivos e pensados para apresentar
-            sua empresa, seus produtos e seus serviços na internet.
-
+            PROJETO 01
         </p>
 
+        <h3>
+            Doces da Cah
+        </h3>
 
-        <div class="hero-buttons">
-
-
-            <a
-                href="#portfolio"
-                class="btn-primary"
-            >
-                Ver portfólio
-            </a>
-
-
-            <a
-                href="#contato"
-                class="btn-secondary"
-            >
-                Pedir orçamento
-            </a>
-
-
-        </div>
-
+        <span>
+            Site para confeitaria
+        </span>
 
     </div>
 
 
+    <!-- PROJETO 02 -->
 
-    <!-- =================================================
-         SLIDE DO PORTFÓLIO
-    ================================================== -->
+    <div class="slider-card">
 
-    <div class="portfolio-slider">
-
-
-        <!-- PROJETO 01 -->
-
-        <div class="slider-card active">
-
-
-            <div class="project-icon">
-                🍰
-            </div>
-
-
-            <p>
-                PROJETO 01
-            </p>
-
-
-            <h3>
-                Doces da Cah
-            </h3>
-
-
-            <span>
-                Site para confeitaria
-            </span>
-
-
+        <div class="project-icon">
+            💻
         </div>
 
+        <p>
+            PROJETO 02
+        </p>
 
+        <h3>
+            TechFix
+        </h3>
 
-        <!-- PROJETO 02 -->
-
-        <div class="slider-card">
-
-
-            <div class="project-icon">
-                💻
-            </div>
-
-
-            <p>
-                PROJETO 02
-            </p>
-
-
-            <h3>
-                TechFix
-            </h3>
-
-
-            <span>
-                Manutenção de notebooks
-            </span>
-
-
-        </div>
-
-
-
-        <!-- PROJETO 03 -->
-
-        <div class="slider-card">
-
-
-            <div class="project-icon">
-                ＋
-            </div>
-
-
-            <p>
-                PROJETO 03
-            </p>
-
-
-            <h3>
-                Em breve
-            </h3>
-
-
-            <span>
-                Novo projeto em desenvolvimento
-            </span>
-
-
-        </div>
-
-
-
-        <!-- BOTÃO ANTERIOR -->
-
-        <button
-            class="slider-btn prev"
-            onclick="mudarSlide(-1)"
-            aria-label="Projeto anterior"
-        >
-            ‹
-        </button>
-
-
-
-        <!-- BOTÃO PRÓXIMO -->
-
-        <button
-            class="slider-btn next"
-            onclick="mudarSlide(1)"
-            aria-label="Próximo projeto"
-        >
-            ›
-        </button>
-
-
-
-        <!-- INDICADORES -->
-
-        <div class="slider-dots">
-
-
-            <span
-                class="dot active"
-                onclick="irParaSlide(0)"
-            ></span>
-
-
-            <span
-                class="dot"
-                onclick="irParaSlide(1)"
-            ></span>
-
-
-            <span
-                class="dot"
-                onclick="irParaSlide(2)"
-            ></span>
-
-
-        </div>
-
+        <span>
+            Manutenção de notebooks
+        </span>
 
     </div>
+
+
+    <!-- PROJETO 03 -->
+
+    <div class="slider-card">
+
+        <div class="project-icon">
+            ＋
+        </div>
+
+        <p>
+            PROJETO 03
+        </p>
+
+        <h3>
+            Em breve
+        </h3>
+
+        <span>
+            Novo projeto em desenvolvimento
+        </span>
+
+    </div>
+
+
+    <!-- BOTÃO ANTERIOR -->
+
+    <button
+        type="button"
+        class="slider-btn prev"
+        onclick="mudarSlide(-1)"
+        aria-label="Projeto anterior"
+    >
+        ‹
+    </button>
+
+
+    <!-- BOTÃO PRÓXIMO -->
+
+    <button
+        type="button"
+        class="slider-btn next"
+        onclick="mudarSlide(1)"
+        aria-label="Próximo projeto"
+    >
+        ›
+    </button>
+
+
+    <!-- INDICADORES -->
+
+    <div class="slider-dots">
+
+        <span
+            class="dot active"
+            onclick="irParaSlide(0)"
+        ></span>
+
+        <span
+            class="dot"
+            onclick="irParaSlide(1)"
+        ></span>
+
+        <span
+            class="dot"
+            onclick="irParaSlide(2)"
+        ></span>
+
+    </div>
+
+</div>
 
 
 </section>
-
-
 
 <!-- =====================================================
      PORTFÓLIO
@@ -291,123 +252,107 @@
 >
 
 
-    <div class="section-title">
+<div class="section-title">
 
+    <p>
+        MEUS TRABALHOS
+    </p>
+
+    <h2>
+        Projetos em destaque
+    </h2>
+
+</div>
+
+
+<div class="portfolio-grid">
+
+
+    <!-- =================================================
+         DOCES DA CAH
+    ================================================== -->
+
+    <a
+        href="projetosprojetos/doces-da-cah.html"
+        class="project project-link"
+    >
+
+        <div class="project-image cake">
+            🍰
+        </div>
+
+        <h3>
+            Doces da Cah
+        </h3>
 
         <p>
-            MEUS TRABALHOS
+            Site para divulgação de produtos, preços e contato
+            com a cliente.
         </p>
 
+        <span class="project-view">
+            Ver projeto →
+        </span>
 
-        <h2>
-            Projetos em destaque
-        </h2>
-
-
-    </div>
+    </a>
 
 
+    <!-- =================================================
+         TECHFIX
+    ================================================== -->
 
-    <div class="portfolio-grid">
+    <article class="project">
 
+        <div class="project-image notebook">
+            💻
+        </div>
 
-        <!-- DOCES DA CAH -->
+        <h3>
+            TechFix
+        </h3>
+
+        <p>
+            Página profissional para serviços de manutenção
+            de notebooks e computadores.
+        </p>
 
         <a
-            href="projetosprojetos/doces-da-cah.html"
-            class="project project-link"
+            href="projetosprojetos/techfix.html"
+            class="project-link"
+            target="_blank"
+            rel="noopener noreferrer"
         >
-
-
-            <div class="project-image cake">
-                🍰
-            </div>
-
-
-            <h3>
-                Doces da Cah
-            </h3>
-
-
-            <p>
-                Site para divulgação de produtos, preços e contato
-                com a cliente.
-            </p>
-
-
-            <span class="project-view">
-                Ver projeto →
-            </span>
-
-
+            Ver projeto →
         </a>
 
+    </article>
 
 
-        <!-- TECHFIX -->
+    <!-- =================================================
+         PROJETO FUTURO
+    ================================================== -->
 
-        <article class="project">
+    <article class="project">
 
+        <div class="project-image">
+            ✦
+        </div>
 
-            <div class="project-image notebook">
-                💻
-            </div>
+        <h3>
+            Próximo projeto
+        </h3>
 
+        <p>
+            Novo projeto em desenvolvimento.
+        </p>
 
-            <h3>
-                TechFix
-            </h3>
-
-
-            <p>
-                Página profissional para serviços de manutenção
-                de notebooks e computadores.
-            </p>
-
-
-            <a
-                href="projetosprojetos/techfix.html"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Ver projeto
-            </a>
+    </article>
 
 
-        </article>
-
-
-
-        <!-- PRÓXIMO PROJETO -->
-
-        <article class="project">
-
-
-            <div class="project-image">
-                ✦
-            </div>
-
-
-            <h3>
-                Próximo projeto
-            </h3>
-
-
-            <p>
-                Novo projeto em desenvolvimento.
-            </p>
-
-
-        </article>
-
-
-    </div>
+</div>
 
 
 </section>
-
-
 
 <!-- =====================================================
      PLANOS
@@ -419,205 +364,170 @@
 >
 
 
-    <div class="section-title">
+<div class="section-title">
+
+    <p>
+        PLANOS
+    </p>
+
+    <h2>
+        Escolha seu site
+    </h2>
+
+</div>
 
 
-        <p>
-            PLANOS
-        </p>
+<div class="plans-grid">
 
 
-        <h2>
-            Escolha seu site
-        </h2>
+    <!-- =================================================
+         ESSENCIAL
+    ================================================== -->
 
+    <div class="plan">
+
+        <h3>
+            Essencial
+        </h3>
+
+        <div class="price">
+            R$ 250
+        </div>
+
+        <ul>
+
+            <li>
+                Site responsivo
+            </li>
+
+            <li>
+                Informações da empresa
+            </li>
+
+            <li>
+                Botão de contato
+            </li>
+
+            <li>
+                Integração com WhatsApp
+            </li>
+
+        </ul>
+
+        <a
+            href="#contato"
+            class="plan-btn"
+        >
+            Quero este
+        </a>
 
     </div>
 
 
+    <!-- =================================================
+         PROFISSIONAL
+    ================================================== -->
 
-    <div class="plans-grid">
+    <div class="plan destaque">
 
-
-        <!-- ESSENCIAL -->
-
-        <div class="plan">
-
-
-            <h3>
-                Essencial
-            </h3>
-
-
-            <div class="price">
-                R$ 250
-            </div>
-
-
-            <ul>
-
-
-                <li>
-                    Site responsivo
-                </li>
-
-
-                <li>
-                    Informações da empresa
-                </li>
-
-
-                <li>
-                    Botão de contato
-                </li>
-
-
-                <li>
-                    Integração com WhatsApp
-                </li>
-
-
-            </ul>
-
-
-            <a
-                href="#contato"
-                class="plan-btn"
-            >
-                Quero este
-            </a>
-
-
+        <div class="badge">
+            MAIS PROCURADO
         </div>
 
+        <h3>
+            Profissional
+        </h3>
 
-
-        <!-- PROFISSIONAL -->
-
-        <div class="plan destaque">
-
-
-            <div class="badge">
-                MAIS PROCURADO
-            </div>
-
-
-            <h3>
-                Profissional
-            </h3>
-
-
-            <div class="price">
-                R$ 400
-            </div>
-
-
-            <ul>
-
-
-                <li>
-                    Site responsivo
-                </li>
-
-
-                <li>
-                    Seções extras
-                </li>
-
-
-                <li>
-                    Galeria de imagens
-                </li>
-
-
-                <li>
-                    Catálogo de produtos
-                </li>
-
-
-                <li>
-                    Formulário de contato
-                </li>
-
-
-            </ul>
-
-
-            <a
-                href="#contato"
-                class="plan-btn"
-            >
-                Quero este
-            </a>
-
-
+        <div class="price">
+            R$ 400
         </div>
 
+        <ul>
 
+            <li>
+                Site responsivo
+            </li>
 
-        <!-- COMPLETO -->
+            <li>
+                Seções extras
+            </li>
 
-        <div class="plan">
+            <li>
+                Galeria de imagens
+            </li>
 
+            <li>
+                Catálogo de produtos
+            </li>
 
-            <h3>
-                Completo
-            </h3>
+            <li>
+                Formulário de contato
+            </li>
 
+        </ul>
 
-            <div class="price">
-                R$ 600
-            </div>
-
-
-            <ul>
-
-
-                <li>
-                    Catálogo completo
-                </li>
-
-
-                <li>
-                    Recursos personalizados
-                </li>
-
-
-                <li>
-                    Animações
-                </li>
-
-
-                <li>
-                    Configuração de publicação
-                </li>
-
-
-                <li>
-                    Personalização avançada
-                </li>
-
-
-            </ul>
-
-
-            <a
-                href="#contato"
-                class="plan-btn"
-            >
-                Quero este
-            </a>
-
-
-        </div>
-
+        <a
+            href="#contato"
+            class="plan-btn"
+        >
+            Quero este
+        </a>
 
     </div>
+
+
+    <!-- =================================================
+         COMPLETO
+    ================================================== -->
+
+    <div class="plan">
+
+        <h3>
+            Completo
+        </h3>
+
+        <div class="price">
+            R$ 600
+        </div>
+
+        <ul>
+
+            <li>
+                Catálogo completo
+            </li>
+
+            <li>
+                Recursos personalizados
+            </li>
+
+            <li>
+                Animações
+            </li>
+
+            <li>
+                Configuração de publicação
+            </li>
+
+            <li>
+                Personalização avançada
+            </li>
+
+        </ul>
+
+        <a
+            href="#contato"
+            class="plan-btn"
+        >
+            Quero este
+        </a>
+
+    </div>
+
+
+</div>
 
 
 </section>
-
-
 
 <!-- =====================================================
      CONTATO / ORÇAMENTO
@@ -629,246 +539,205 @@
 >
 
 
-    <div class="section-title">
-
-
-        <p>
-            VAMOS CONVERSAR
-        </p>
-
-
-        <h2>
-            Quer colocar seu negócio na internet?
-        </h2>
-
-
-    </div>
-
+<div class="section-title">
 
     <p>
-        Conte um pouco sobre seu projeto e solicite um orçamento.
+        VAMOS CONVERSAR
     </p>
 
+    <h2>
+        Quer colocar seu negócio na internet?
+    </h2>
+
+</div>
 
 
-    <!-- =================================================
-         FORMULÁRIO DE ORÇAMENTO
-    ================================================== -->
+<p>
+    Conte um pouco sobre seu projeto e solicite um orçamento.
+</p>
 
-    <form
-        class="budget-form"
-        action="https://formsubmit.co/alexsites.contato@gmail.com"
-        method="POST"
+
+<!-- =================================================
+     FORMULÁRIO
+================================================== -->
+
+<form
+    class="budget-form"
+    action="https://formsubmit.co/alexsites.contato@gmail.com"
+    method="POST"
+>
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="Novo orçamento — Alex Sites"
+    >
+
+    <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+    >
+
+    <input
+        type="hidden"
+        name="_template"
+        value="table"
     >
 
 
-        <!-- CONFIGURAÇÕES DO FORMULÁRIO -->
+    <!-- NOME -->
+
+    <div class="form-group">
+
+        <label for="nome">
+            Nome
+        </label>
 
         <input
-            type="hidden"
-            name="_subject"
-            value="Novo orçamento — Alex Sites"
+            type="text"
+            id="nome"
+            name="Nome"
+            placeholder="Seu nome"
+            required
         >
-
-
-        <input
-            type="hidden"
-            name="_captcha"
-            value="false"
-        >
-
-
-        <input
-            type="hidden"
-            name="_template"
-            value="table"
-        >
-
-
-
-        <!-- NOME -->
-
-        <div class="form-group">
-
-
-            <label for="nome">
-                Nome
-            </label>
-
-
-            <input
-                type="text"
-                id="nome"
-                name="Nome"
-                placeholder="Seu nome"
-                required
-            >
-
-
-        </div>
-
-
-
-        <!-- E-MAIL -->
-
-        <div class="form-group">
-
-
-            <label for="email">
-                E-mail
-            </label>
-
-
-            <input
-                type="email"
-                id="email"
-                name="E-mail"
-                placeholder="seuemail@exemplo.com"
-                required
-            >
-
-
-        </div>
-
-
-
-        <!-- TIPO DE SITE -->
-
-        <div class="form-group">
-
-
-            <label for="tipo-site">
-                Tipo de site
-            </label>
-
-
-            <select
-                id="tipo-site"
-                name="Tipo de site"
-                required
-            >
-
-
-                <option value="">
-                    Selecione uma opção
-                </option>
-
-
-                <option value="Site Essencial - R$ 250">
-                    Site Essencial — R$ 250
-                </option>
-
-
-                <option value="Site Profissional - R$ 400">
-                    Site Profissional — R$ 400
-                </option>
-
-
-                <option value="Site Completo - R$ 600">
-                    Site Completo — R$ 600
-                </option>
-
-
-                <option value="Projeto personalizado">
-                    Projeto personalizado
-                </option>
-
-
-            </select>
-
-
-        </div>
-
-
-
-        <!-- MENSAGEM -->
-
-        <div class="form-group">
-
-
-            <label for="mensagem">
-                Conte sobre seu projeto
-            </label>
-
-
-            <textarea
-                id="mensagem"
-                name="Mensagem"
-                rows="6"
-                placeholder="Conte o que você gostaria que o seu site tivesse..."
-                required
-            ></textarea>
-
-
-        </div>
-
-
-
-        <!-- SUBMIT -->
-
-        <button
-            type="submit"
-            class="budget-btn"
-        >
-            Solicitar orçamento
-        </button>
-
-
-    </form>
-
-
-
-    <!-- =================================================
-         DIVISOR
-    ================================================== -->
-
-    <div class="contact-divider">
-
-
-        <span>
-            OU
-        </span>
-
 
     </div>
 
 
+    <!-- E-MAIL -->
 
-    <!-- =================================================
-         WHATSAPP
-    ================================================== -->
+    <div class="form-group">
 
-    <a
-        href="https://wa.me/5519971262978"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-primary"
+        <label for="email">
+            E-mail
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="E-mail"
+            placeholder="seuemail@exemplo.com"
+            required
+        >
+
+    </div>
+
+
+    <!-- TIPO DE SITE -->
+
+    <div class="form-group">
+
+        <label for="tipo-site">
+            Tipo de site
+        </label>
+
+        <select
+            id="tipo-site"
+            name="Tipo de site"
+            required
+        >
+
+            <option value="">
+                Selecione uma opção
+            </option>
+
+            <option value="Site Essencial - R$ 250">
+                Site Essencial — R$ 250
+            </option>
+
+            <option value="Site Profissional - R$ 400">
+                Site Profissional — R$ 400
+            </option>
+
+            <option value="Site Completo - R$ 600">
+                Site Completo — R$ 600
+            </option>
+
+            <option value="Projeto personalizado">
+                Projeto personalizado
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- MENSAGEM -->
+
+    <div class="form-group">
+
+        <label for="mensagem">
+            Conte sobre seu projeto
+        </label>
+
+        <textarea
+            id="mensagem"
+            name="Mensagem"
+            rows="6"
+            placeholder="Conte o que você gostaria que o seu site tivesse..."
+            required
+        ></textarea>
+
+    </div>
+
+
+    <!-- BOTÃO -->
+
+    <button
+        type="submit"
+        class="budget-btn"
     >
-        Falar pelo WhatsApp
-    </a>
+        Solicitar orçamento
+    </button>
+
+</form>
 
 
+<!-- =================================================
+     DIVISOR
+================================================== -->
 
-    <!-- =================================================
-         MESSENGER
-    ================================================== -->
+<div class="contact-divider">
 
-    <a
-        href="https://m.me/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-secondary"
-    >
-        Falar pelo Messenger
-    </a>
+    <span>
+        OU
+    </span>
+
+</div>
+
+
+<!-- =================================================
+     WHATSAPP
+================================================== -->
+
+<a
+    href="https://wa.me/5519971262978"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn-primary"
+>
+    Falar pelo WhatsApp
+</a>
+
+
+<!-- =================================================
+     MESSENGER
+================================================== -->
+
+<a
+    href="https://m.me/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn-secondary"
+>
+    Falar pelo Messenger
+</a>
 
 
 </section>
 
-
 </main>
-
-
 
 <!-- =====================================================
      FOOTER
@@ -877,21 +746,18 @@
 <footer>
 
 
-    <p>
-        © 2026 Alex Sites — Criação de Sites
-    </p>
+<p>
+    © 2026 Alex Sites — Criação de Sites
+</p>
 
 
 </footer>
-
-
 
 <!-- =====================================================
      JAVASCRIPT
 ====================================================== -->
 
 <script src="script.js"></script>
-
 
 </body>
 
